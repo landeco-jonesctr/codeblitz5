@@ -23,7 +23,7 @@ plot(las, color = "Intensity")   # colored by reflectance intensity
 crown <- remove_stem(las)        # strip out the trunk, keep just the crown
 crown <- add_reflectance(crown)  # fill in any missing reflectance values
 
-hist(crown$Intensity)            # just a plain base-R histogram of the crown's points
+hist(crown$Reflectance)          # just a plain base-R histogram, in dB, of the crown's points
 
 hist_df <- get_histogram(crown)  # same idea, packaged as an easy-to-use table
 print(hist_df)
@@ -32,9 +32,9 @@ print(hist_df)
 dir.create("media", showWarnings = FALSE)
 out_path <- file.path("media", paste0(tree_id, "_crown_intensity_hist.jpg"))
 jpeg(out_path, width = 900, height = 650, res = 120)
-hist(crown$Intensity,
+hist(crown$Reflectance,
      main = tree_id,
-     xlab = "Intensity",
+     xlab = "Reflectance (dB)",
      col = "steelblue", border = "white")
 dev.off()
 cat("\nSaved plot to:", out_path, "\n")

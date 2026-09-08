@@ -75,7 +75,7 @@ plot(las, color = "Intensity")   # colored by reflectance intensity
 crown <- remove_stem(las)        # strip out the trunk, keep just the crown
 crown <- add_reflectance(crown)  # fill in any missing reflectance values
 
-hist(crown$Intensity)            # just a plain base-R histogram of the crown's points
+hist(crown$Reflectance)          # just a plain base-R histogram, in dB, of the crown's points
 
 hist_df <- get_histogram(crown)  # same idea, packaged as a one-row table
 
@@ -97,7 +97,7 @@ Output:
 ...
 ```
 
-![Histogram of crown-only intensity values for tree M-04-15549](media/M-04-15549_crown_intensity_hist.jpg)
+![Histogram of crown-only reflectance values (dB) for tree M-04-15549](media/M-04-15549_crown_intensity_hist.jpg)
 
 Each tree's histogram becomes one row of predictor features once reshaped wide (one column per intensity bin), joined to that tree's `% SCORCH` value from the field survey.
 
