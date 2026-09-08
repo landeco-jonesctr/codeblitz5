@@ -51,7 +51,7 @@ Field crews walked burned stands and visually estimated the percent of each tree
 -   **Response variable:** `% SCORCH`, the field-estimated percent crown scorch, 0–100.
 -   **Features:** bins of the intensity histogram for each tree (i.e., what fraction of a tree's points fell in each intensity range).
 
-[![Slide deck covering this work](media/scorch_slide_deck_preview.jpg)](media/2026-Cannon-scorch-summary.pdf)
+[![Slide deck covering this work](media/scorch_slide_deck_preview.png)](media/2026-Cannon-scorch-summary.pdf)
 
 ### Look at a raw scan
 
