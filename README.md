@@ -250,4 +250,4 @@ Next session, we'll combine everyone's tables across years and run the full mode
 
 ------------------------------------------------------------------------
 
-*Concept, examples, and flow conceptualized by the JBC; assistance with compilation and drafting, and editing from Claude Sonnet 5.*
+*Concept, examples, and flow conceptualized by JBC; assistance with compilation and drafting, and editing from Claude Sonnet 5.*
